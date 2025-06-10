@@ -3,6 +3,101 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+
+
+body {
+            font-family: sans-serif;
+            margin: 20px;
+	    
+        }
+        h2 {
+            text-align: center;
+}
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button.enviar {
+            background-color: #3e8e41;
+            color: white;
+            padding: 0.7em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+	button.vagas {
+            
+	background-color: #3e8e41;
+            color: white;
+            padding: 0.7em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+	}
+
+        button.botao{
+        font-size:20px;
+margin-top:20px;
+margin-left:20px
+background-color:none;
+border:none;
+color:black;
+
+}
+    </style>
+<body>
+
+<button class="botao">&#9776</button>
+<nav>
+<ul class="menu" id="menu">
+        <li><a href="#"></a></li>
+//arrumar o butão
+</ul>
+</nav>
+    <h2>Adicionar Currículo</h2>
+
+    <form action="#" method="post">
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="formacao">Formação Acadêmica:</label>
+        <textarea id="formacao" name="formacao" rows="3"></textarea>
+
+        <label for="experiencia">Experiência Profissional:</label>
+        <textarea id="experiencia" name="experiencia" rows="5"></textarea>
+
+        <label for="habilidades">Habilidades:</label>
+        <textarea id="habilidades" name="habilidades" rows="3"></textarea>
+
+        <label for="linkedin">LinkedIn (Opcional):</label>
+        <input type="url" id="linkedin" name="linkedin">
+
+        <button type="submit" class='enviar'>Enviar Currículo</button>
+	<button type="submit" class='vagas'>Vagas Para Você</button>
+        
+      
+    </form>
+
+</body>
+
 {% endblock %}
